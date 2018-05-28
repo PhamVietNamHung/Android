@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_dangnhap"
+        android:orderInCategory="100"
+        android:title="Đăng nhập"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_dangki"
+        android:orderInCategory="100"
+        android:title="Đăng kí"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_gioithieu"
+        android:orderInCategory="100"
+        android:title="Giới thiệu"
+        app:showAsAction="never" />
+
+</menu>
