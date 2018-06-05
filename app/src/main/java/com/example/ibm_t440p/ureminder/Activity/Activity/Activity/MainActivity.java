@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity
             ArrayList<SanPham> ds = new ArrayList<>();
             try
             {
-                URL url = new URL("http://192.168.1.7:8080/api/products");
+                URL url = new URL("https://ugao-server.herokuapp.com/api/products");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 InputStreamReader inputStreamReader = new InputStreamReader(connection.getInputStream(),"UTF-8");
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
