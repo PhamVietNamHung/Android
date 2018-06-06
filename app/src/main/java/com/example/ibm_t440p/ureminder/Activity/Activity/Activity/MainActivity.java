@@ -25,6 +25,7 @@ import android.widget.ScrollView;
 import android.widget.ViewFlipper;
 
 import com.example.ibm_t440p.ureminder.Activity.Activity.Adapter.SanPhamAdapter;
+import com.example.ibm_t440p.ureminder.Activity.Activity.Model.GioHang;
 import com.example.ibm_t440p.ureminder.Activity.Activity.Model.SanPham;
 import com.example.ibm_t440p.ureminder.R;
 import com.squareup.picasso.Picasso;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity
     ArrayList<SanPham> arrayList = new ArrayList<>() ;
     SanPhamAdapter adapter;
     ScrollView scrollView;
+    public static ArrayList<GioHang> manggiohang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,6 +152,11 @@ public class MainActivity extends AppCompatActivity
         viewFlipper = (ViewFlipper) findViewById(R.id.viewlipper);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerviewSanPham);
         scrollView =(ScrollView)findViewById(R.id.activity_chi_tiet_san_pham);
+        if(manggiohang != null){
+
+        }else {
+            manggiohang = new ArrayList<>();
+        }
     }
 
     public  void ActionViewFlipper(){

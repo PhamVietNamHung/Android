@@ -1,21 +1,27 @@
 package com.example.ibm_t440p.ureminder.Activity.Activity.Model;
 
-public class SanPham {
-    public int IDSanPham;
+public class GioHang {
+    public int idsp;
     public String TenSanPham;
-    public String MoTa;
     public String GiaSanPham;
     public String HinhAnh;
+    public int solong ;
 
-    public int getIDSanPham() {
-        return IDSanPham;
+    public GioHang(int idsp, String tenSanPham, String giaSanPham, String hinhAnh, int solong) {
+        this.idsp = idsp;
+        TenSanPham = tenSanPham;
+        GiaSanPham = giaSanPham;
+        HinhAnh = hinhAnh;
+        this.solong = solong;
     }
 
-    public void setIDSanPham(int IDSanPham) {
-        this.IDSanPham = IDSanPham;
+    public int getIdsp() {
+        return idsp;
     }
 
-    public SanPham(){};
+    public void setIdsp(int idsp) {
+        this.idsp = idsp;
+    }
 
     public String getTenSanPham() {
         return TenSanPham;
@@ -23,14 +29,6 @@ public class SanPham {
 
     public void setTenSanPham(String tenSanPham) {
         TenSanPham = tenSanPham;
-    }
-
-    public String getMoTa() {
-        return MoTa;
-    }
-
-    public void setMoTa(String moTa) {
-        MoTa = moTa;
     }
 
     public String getGiaSanPham() {
@@ -49,14 +47,11 @@ public class SanPham {
         HinhAnh = hinhAnh;
     }
 
-    public SanPham(int IDSanPham,String tenSanPham, String moTa, String giaSanPham, String hinhAnh) {
-        this.IDSanPham = IDSanPham;
-        TenSanPham = tenSanPham;
-        MoTa = moTa;
-        GiaSanPham = giaSanPham;
-        HinhAnh = hinhAnh;
+    public int getSolong() {
+        return solong;
+    }
+
+    public void setSolong(int solong) {
+        this.solong = solong;
     }
 }
-
-
-

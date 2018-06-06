@@ -91,7 +91,7 @@ public class SanPhamAdapter extends RecyclerView.Adapter<SanPhamAdapter.DataView
             Intent intent = new Intent(this.ctv, SanPhamActivity.class);
            intent.putExtra("HinhAnh",model.getHinhAnh());
            intent.putExtra("TenSanPham",model.getTenSanPham());
-          intent.putExtra("GiaSanPham",model.getGiaSanPham());
+           intent.putExtra("GiaSanPham",model.getGiaSanPham());
             intent.putExtra("MoTa",model.getMoTa());
             this.ctv.startActivity(intent);
 

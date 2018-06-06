@@ -17,8 +17,7 @@
             android:titleTextColor="#fffdfd"
             android:title="Chi tiết sản phẩm"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            >
+            android:layout_height="?attr/actionBarSize">
 
         </android.support.v7.widget.Toolbar>
         <LinearLayout
