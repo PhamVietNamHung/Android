@@ -3,7 +3,7 @@
     package="com.example.ibm_t440p.ureminder">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -25,7 +25,12 @@
         </activity>
         <activity android:name=".Activity.Activity.Activity.SanPhamActivity">
         </activity>
-
+        <activity android:name=".Activity.Activity.Activity.Gao1">
+        </activity>
+        <activity android:name=".Activity.Activity.Activity.Gao2">
+        </activity>
+        <activity android:name=".Activity.Activity.Activity.Gao3">
+        </activity>
     </application>
 
 </manifest>

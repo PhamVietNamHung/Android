@@ -1,5 +1,6 @@
 package com.example.ibm_t440p.ureminder.Activity.Activity.Activity;
 
+import android.content.Intent;
 import android.graphics.ColorSpace;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -130,15 +131,20 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.home) {
-            // Handle the camera action
+            Intent intent = new Intent(MainActivity.this,MainActivity.class);
+            startActivity(intent);
         } else if (id == R.id.gao1) {
-
+            Intent intent = new Intent(MainActivity.this,Gao1.class);
+            startActivity(intent);
         } else if (id == R.id.gao2) {
-
+            Intent intent = new Intent(MainActivity.this,Gao2.class);
+            startActivity(intent);
         }else if (id == R.id.gao3) {
-
+            Intent intent = new Intent(MainActivity.this,Gao3.class);
+            startActivity(intent);
         }else if (id == R.id.profile) {
-
+            Intent intent = new Intent(MainActivity.this,MainActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
